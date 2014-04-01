@@ -21,6 +21,10 @@
 	<key>patterns</key>
 	<array>
 		<dict>
+			<key>include</key>
+			<string>#roxygen</string>
+		</dict>
+		<dict>
 			<key>captures</key>
 			<dict>
 				<key>1</key>
@@ -126,6 +130,84 @@
 	</array>
 	<key>repository</key>
 	<dict>
+		<key>roxygen</key>
+		<dict>
+			<key>patterns</key>
+			<array>
+				<dict>
+					<key>captures</key>
+					<dict>
+						<key>1</key>
+						<dict>
+							<key>name</key>
+							<string>punctuation.definition.comment.r</string>
+						</dict>
+						<key>2</key>
+						<dict>
+							<key>name</key>
+							<string>keyword.other.r</string>
+						</dict>
+						<key>3</key>
+						<dict>
+							<key>name</key>
+							<string>variable.parameter.r</string>
+						</dict>
+						<key>4</key>
+						<dict>
+							<key>name</key>
+							<string>text.roxygen.r</string>
+						</dict>
+					</dict>
+					<key>match</key>
+					<string>(#&apos;)\s*(@param)\s*([^ ]+)(.*)$\n?</string>
+					<key>name</key>
+					<string>comment.line.number-sign.r</string>
+				</dict>
+				<dict>
+					<key>captures</key>
+					<dict>
+						<key>1</key>
+						<dict>
+							<key>name</key>
+							<string>punctuation.definition.comment.r</string>
+						</dict>
+						<key>2</key>
+						<dict>
+							<key>name</key>
+							<string>keyword.other.r</string>
+						</dict>
+						<key>3</key>
+						<dict>
+							<key>name</key>
+							<string>text.roxygen.r</string>
+						</dict>
+					</dict>
+					<key>match</key>
+					<string>(#&apos;)\s*(@[a-zA-Z]+)?(.*)$\n?</string>
+					<key>name</key>
+					<string>comment.line.number-sign.r</string>
+				</dict>
+				<dict>
+					<key>captures</key>
+					<dict>
+						<key>1</key>
+						<dict>
+							<key>name</key>
+							<string>punctuation.definition.comment.r</string>
+						</dict>
+						<key>2</key>
+						<dict>
+							<key>name</key>
+							<string>text.roxygen.r</string>
+						</dict>
+					</dict>
+					<key>match</key>
+					<string>(#&apos;)(.*)$\n?</string>
+					<key>name</key>
+					<string>comment.line.number-sign.r</string>
+				</dict>
+			</array>
+		</dict>
 		<key>constant</key>
 		<dict>
 			<key>patterns</key>
