@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>fileTypes</key>
+	<array>
+		<string>rmdown</string>
+		<string>rmarkdown</string>
+		<string>rmarkdn</string>
+		<string>rmd</string>
+	</array>
+	<key>foldingStartMarker</key>
+	<string>(?x)
+    (&lt;(?i:head|body|table|thead|tbody|tfoot|tr|div|select|fieldset|style|script|ul|ol|form|dl)\b.*?&gt;
+    |&lt;!--(?!.*--&gt;)
+    |\{\s*($|\?&gt;\s*$|//|/\*(.*\*/\s*$|(?!.*?\*/)))
+    )</string>
+	<key>foldingStopMarker</key>
+	<string>(?x)
+    (&lt;/(?i:head|body|table|thead|tbody|tfoot|tr|div|select|fieldset|style|script|ul|ol|form|dl)&gt;
+    |^\s*--&gt;
+    |(^|\s)\}
+    )</string>
+	<key>keyEquivalent</key>
+	<string>^~M</string>
+	<key>name</key>
+	<string>R Markdown Extended</string>
+	<key>patterns</key>
+	<array>
+		<dict>
+			<key>include</key>
+			<string>text.html.markdown</string>
+		</dict>
+	</array>
+	<key>repository</key>
+	<dict/>
+	<key>scopeName</key>
+	<string>text.html.rmarkdown</string>
+	<key>uuid</key>
+	<string>7ce13170-ba06-11e3-a5e2-0800200c9a66</string>
+</dict>
+</plist>
